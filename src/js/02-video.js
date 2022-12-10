@@ -22,12 +22,12 @@ function setCurentPosition(seconds) {
 
 // * function works with Local Storage
 function readFromLocalStorage() {
-  const seconds = localStorage.getItem('KEY_LOCAL_STORAGE');
+  const seconds = localStorage.getItem(KEY_LOCAL_STORAGE);
   return !seconds ? 0 : Number(seconds);
 }
 
 function writeToLocalStorage({ seconds } = {}) {
-  localStorage.setItem('KEY_LOCAL_STORAGE', seconds);
+  localStorage.setItem(KEY_LOCAL_STORAGE, seconds);
 }
 
 function initializeScript() {
